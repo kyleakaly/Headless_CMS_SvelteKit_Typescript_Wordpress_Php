@@ -1,3 +1,6 @@
+Hier ist das bereitgestellte Projekt. Wir haben Vercel verwendet, um das Frontend bereitzustellen, und dann einen normalen PHP-Server verwendet, um das Backend bereitzustellen. Hier kannst du die Anwendung in Aktion sehen.
+https://www.appletoninteligencia.ch/
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
@@ -12,6 +15,12 @@ npm create svelte@latest
 
 # create a new project in my-app
 npm create svelte@latest my-app
+```
+## .Env
+Erstellen Sie eine `.env`-Datei im Hauptverzeichnis des Frontends und setzen Sie die erforderlichen Umgebungsvariablen. Zum Beispiel:
+```
+VITE_URL_BACKEND= Ihre Backend-URL
+VITE_PROD_URL = Ihre Frontend-URL
 ```
 
 ## Developing
