@@ -29,7 +29,7 @@ define( 'OBJECT_K', 'OBJECT_K' );
 /**
  * @since 0.71
  */
-define( 'ARRAY_A', 'ARRAY_A' );;;
+define( 'ARRAY_A', 'ARRAY_A' );
 
 /**
  * @since 0.71
