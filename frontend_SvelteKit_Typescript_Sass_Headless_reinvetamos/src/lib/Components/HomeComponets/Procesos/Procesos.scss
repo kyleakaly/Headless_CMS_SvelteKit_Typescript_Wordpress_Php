@@ -1,0 +1,104 @@
+.procesosmaincontainer{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    flex-wrap: nowrap;
+    gap: 36px;
+
+    h2{
+        margin-left: 24px;
+
+        font-size: 4.8rem;
+        
+
+    }
+
+    .procesostotales{
+        .procesosindividuales{
+
+            display: grid;
+            grid-template-columns: 15% 83%;
+            grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+            column-gap:2%;
+            margin-bottom: 24px;
+            position: relative;
+            transition: opacity 2s;
+            opacity: 0.5;
+        
+.contenedorbarra{
+    
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+
+            .barra{
+                width: 4px;
+justify-self: center;
+background-color: #FF0093;
+height: 110%;
+position: relative;
+left: 20px;
+
+
+
+
+            }
+
+            span{
+
+                display: flex;
+                position: absolute;
+                align-items: flex;
+                width: auto;
+                top: -10px;
+                left: 9.3%;
+                border: 6px solid aqua;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                font-size: 28px;
+                justify-content: center;
+                background-color: black;
+          
+            }
+
+
+        }
+
+            .contenido{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid white;
+                padding: 24px;
+                gap: 24px;
+h3{
+    font-size: 36px;
+}
+              
+
+                .logotextoprocess{
+
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: flex-start;
+                    gap:8px;
+
+                }
+
+            }
+    
+        }
+
+    .active{
+            opacity: 1;
+
+        }
+
+
+    }
+
+ 
+
+}

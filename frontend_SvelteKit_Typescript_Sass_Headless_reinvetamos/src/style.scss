@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root{
+
+    --fuente-ralewey:'Raleway', sans-serif ;
+    --fuente-open-san:'Open Sans', sans-serif;
+    --fuente-roboto:'Roboto', sans-serif;
+
+}
+
+html{
+
+    box-sizing: border-box;
+    font-size: 62.5%;/*  10px 1rem */
+    margin-top:0px !important;
+    box-sizing: border-box;
+
+}
+
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+
+}
+
+body{
+    font-family: var(--fuente-ralewey);
+    font-size: 18px;
+    font-size: 1.8rem;
+line-height: 1.5;
+background-color: rgb(0, 0, 0);
+height: 100%;
+color: white;
+}
+
+.poneral100div{
+    height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+h1,h2,h3,h4 {
+
+   
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+
+}
+
+h1 {
+    font-size: 3rem;
+    
+}
+
+h2 {
+    font-size: 2.2rem;
+    
+}
+
+h3 {
+    font-size: 1.8rem;
+    
+}
+
+h4 {
+    font-size: 1.4rem;
+    
+}
+
+p,span{
+    font-family: var(--fuente-roboto);
+
+    font-size: 1.8rem;
+    margin: 0px;
+    font-weight: 200;
+    line-height: 1.4;
+
+}
+
+a{
+    font-family: var(--fuente-roboto);
+
+    font-size: 1.6rem;
+    color: aqua;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 300ms;
+
+
+
+    &:hover{
+        color: #FF0093;
+        border-bottom: 1px solid rgb(255, 0, 170);
+        border-bottom-left-radius: 10px;
+    }
+
+}
+
+
+
+a:active{
+
+    color: black;
+
+}
+
+//ALLGEMEIN
+.space,.space-recht{
+    height: 2px;
+    width: 100px;
+    margin-top: 18px;
+margin-bottom: 18px;
+}
+
+.space-recht{
+    display: block;
+    margin-left: auto
+}
+
+
+
+img{
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.cambiarApariencia{
+    transition: 1s;
+background-color: black;
+border: 1px solid #707070;
+
+    .logo{
+        margin: 0px!important;
+
+        span{
+        justify-content: center!important;
+
+            img{
+                display: none;
+
+            }
+        }
+
+        .header-container-logo-and-burguer{
+            button{
+        margin-bottom: 4px;
+
+                .line1,.line2,.line3{
+                    background-color: white!important;
+                    width: 95px;
+                    height: 6px;
+                    margin-top: 4px;
+                    
+                }
+            }
+        }
+
+    }
+
+
+}
+
+//POST
+@media(min-width:722px){
+.postacomodar{
+    display: grid;
+grid-template-rows: 1fr 1fr auto;
+column-gap:20px;
+
+grid-template-columns: 1fr 1fr; 
+.space-recht{
+margin: 0px;
+margin-bottom: 24px
+}
+}
+}
+
+
+////////FOOTER//////////
+footer{
+    
+}
+
+//micelanias
+
+//botonarir y cerrar
+.iconabrircerrar{
+
+    height: 40px;
+    width:40px;
+    background-color: rgb(0, 0, 0);
+    border:1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 3%;
+    top: 8px;
+
+   
+
+    .linea1abrir,.linea2abrir{
+
+        width: 18px;
+        height:4px;
+        background-color:aqua ;
+        transition: 300ms
+
+    }
+
+    
+
+    .linea1abrir{
+
+        height: 18px;
+        width :4px;
+        position: absolute
+
+    }
+
+}
+
+.iconoabrirycerraractive{
+
+    .linea1abrir{
+
+        width: 18px;
+height: 4px;
+    }
+
+}
+
+.aqua-text{
+    color: aqua;
+}
+
+
+
+
+
+////importar cscc de otras paginas 
+@import './routes/layout.scss';
+@import './routes/inicio.scss';
+@import './routes/animaciones.scss';
+@import './lib/Components/Menu/Menu.scss';
+@import  './lib/Components/Layout/Icons.scss';
+@import  './lib/Components/Layout/footer.scss';
+@import './routes/posts/[slug]/postsindividuelle.scss';
+@import './routes/kontakt/kontakt.scss';
+@import  './lib/Components/HomeComponets/Contenido2servicios.scss';
+@import  './lib/Components/HomeComponets/Contenido3Kunden/Contenido3Kunden.scss';
+@import  './lib/Components/HomeComponets/Procesos/Procesos.scss';
+@import  './lib/Components/HomeComponets/Blogseccion/Blogseccion.scss';
+@import  './lib/Components/HomeComponets/Faq/Faq.scss';
+@import  './lib/Components/HomeComponets/Ueberuns/Ueberuns.scss';
+
+

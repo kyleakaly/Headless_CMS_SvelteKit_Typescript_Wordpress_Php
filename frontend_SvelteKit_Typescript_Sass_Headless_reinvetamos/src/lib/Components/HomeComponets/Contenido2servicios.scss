@@ -1,0 +1,80 @@
+.contenido2completo{
+    height: 100%;
+    margin-top: 46px;
+    margin-left: 24px;
+
+    .textoscontenido2{
+
+        h2{
+            font-size: 4.8rem;
+            transition: 300ms;
+           
+        }
+
+       p{
+        transition: 300ms;
+        margin-right: 24px;
+        margin-top: 24px;
+        margin-left: 10px;
+       }
+
+    }
+
+    .serviciosccompletos{
+
+        margin-left: 8px;
+        margin-top: 24px;
+        display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+min-height: 350px;
+max-height: 100%;
+gap: 24px;
+
+        .servicioscajaindividual{
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 90%;
+            gap: 20px;
+min-width: 100%;
+padding: 24px;
+            
+h2{
+    font-size: 3.8rem;
+   
+}
+            .textologoservices{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: flex-start;
+gap: 10px;
+
+p{
+
+    font-size:1.6rem ;
+
+}
+
+            }
+
+            a{
+                text-align: right;
+            }
+        }
+
+    }
+}
+
+.fixedtitulo{
+    transition: 300ms;
+    position: fixed;
+    border: 1px solid white;
+    left:0;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: black;
+
+}

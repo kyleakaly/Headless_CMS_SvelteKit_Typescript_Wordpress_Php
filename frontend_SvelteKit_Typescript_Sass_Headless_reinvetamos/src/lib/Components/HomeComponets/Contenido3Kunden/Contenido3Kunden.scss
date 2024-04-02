@@ -1,0 +1,84 @@
+.container3completo{
+    margin-left: 0;
+    height: 100%;
+    // border: 1px solid white;
+    // margin-bottom: 24px;
+    // padding-top: 24px;
+    .textoscontenido2{
+
+        margin-left: 24px;
+
+    }
+
+    .serviciosccompletos{
+
+        margin-right: 36px;
+        margin-left: 36px;
+
+    }
+
+    .serviciocajaindividual3 {
+        transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .visible {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .oculto-derecha {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .oculto-izquierda {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+}
+
+.crearbotonesdekunden {
+
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    position: relative;
+    z-index: 0;
+    align-items: center;
+
+    .serviciosccompletos{
+
+grid-column: 2/3;
+
+
+    }
+
+    .izquierdoboton{
+        grid-column: 1/2;
+    z-index: 1;
+      
+       
+    }
+
+    .derechoboton{
+        grid-column: 3/4;
+    z-index: 1;
+    right: -10%;
+      
+    }
+
+
+    .izquierdoboton,.derechoboton {
+
+        position: absolute;
+
+        width: 45px;
+        height: 65px;
+        background-color: black;
+        border: 2px solid white;
+        color: white;
+    }
+
+}
